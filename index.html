@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GreenCash — Sua nota fiscal vira crédito quando você recicla</title>
+  <meta name="description" content="Com o GreenCash, a nota fiscal no seu CPF vira crédito quando você recicla as embalagens. O descarte é conferido com a compra e tudo fica provado em blockchain." />
+  <meta name="theme-color" content="#3a4312" />
+  <link rel="icon" type="image/webp" href="assets/logo-icon.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,50..100;1,9..144,300..700,50..100&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="topo">
+    <a class="nav__brand" href="#topo" aria-label="GreenCash, início">
+      <img src="assets/logo-greencash.webp" alt="GreenCash" width="683" height="155" />
+    </a>
+    <nav class="nav__links" id="menu" aria-label="Principal">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#prova">A prova</a>
+      <a href="#credito">Crédito</a>
+      <a href="#modelo">Modelo</a>
+      <a href="#faq">Dúvidas</a>
+      <a class="btn btn--leaf nav__cta" href="#participar">Quero participar</a>
+    </nav>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu">
+      <span class="nav__burger" aria-hidden="true"></span> Menu
+    </button>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__main">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">CPF na nota · reciclagem · blockchain</p>
+          <h1 id="hero-title" class="hero__title reveal">
+            Sua nota fiscal<br />
+            vira <em>crédito</em><br />
+            quando você recicla.
+          </h1>
+          <p class="hero__lead reveal">
+            Informe o CPF na compra, devolva as embalagens no ponto de coleta e receba crédito
+            para usar no mercado ou em tributos. Cada etapa fica provada em blockchain.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--ink" href="#participar">Quero participar</a>
+            <a class="btn btn--ghost" href="#como-funciona">Ver como funciona <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <!-- Ilustração: sacola GreenCash com embalagens e musgo -->
+        <div class="hero__art" aria-hidden="true">
+          <svg class="bag" viewBox="0 0 560 560" role="img">
+            <defs>
+              <path id="leaf" d="M0 0 C 18 -34, 70 -46, 108 -8 C 72 16, 24 22, 0 0 Z" />
+              <linearGradient id="kraft" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#d4ab72" />
+                <stop offset="1" stop-color="#b48650" />
+              </linearGradient>
+              <linearGradient id="kraftSide" x1="0" x2="1">
+                <stop offset="0" stop-color="#9c6f3e" />
+                <stop offset="1" stop-color="#b98c57" />
+              </linearGradient>
+              <linearGradient id="pet" x1="0" x2="1">
+                <stop offset="0" stop-color="#d8eef0" stop-opacity=".95" />
+                <stop offset=".35" stop-color="#ffffff" stop-opacity=".9" />
+                <stop offset="1" stop-color="#a9d2d6" stop-opacity=".95" />
+              </linearGradient>
+              <linearGradient id="alu" x1="0" x2="1">
+                <stop offset="0" stop-color="#8f9a98" />
+                <stop offset=".4" stop-color="#eef2f0" />
+                <stop offset="1" stop-color="#7d8886" />
+              </linearGradient>
+              <linearGradient id="leafA" x1="0" x2="1">
+                <stop offset="0" stop-color="#2d6a1f" />
+                <stop offset="1" stop-color="#6cc33b" />
+              </linearGradient>
+              <linearGradient id="leafB" x1="0" x2="1">
+                <stop offset="0" stop-color="#1d4a17" />
+                <stop offset="1" stop-color="#3f8a2a" />
+              </linearGradient>
+              <radialGradient id="shadow">
+                <stop offset="0" stop-color="#1b2a12" stop-opacity=".35" />
+                <stop offset="1" stop-color="#1b2a12" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+
+            <ellipse class="bag__shadow" cx="290" cy="530" rx="190" ry="18" fill="url(#shadow)" />
+
+            <g class="bag__float">
+              <!-- folhas de trás -->
+              <g class="sway sway--slow">
+                <use href="#leaf" fill="url(#leafB)" transform="translate(205 250) rotate(-120) scale(1.5)" />
+                <use href="#leaf" fill="url(#leafA)" transform="translate(370 245) rotate(-50) scale(1.6)" />
+                <use href="#leaf" fill="url(#leafB)" transform="translate(300 240) rotate(-85) scale(1.25)" />
+              </g>
+
+              <!-- garrafa PET -->
+              <g>
+                <rect x="186" y="150" width="46" height="150" rx="16" fill="url(#pet)" stroke="#8fbfc4" stroke-width="1.5" />
+                <rect x="197" y="118" width="24" height="38" rx="6" fill="url(#pet)" stroke="#8fbfc4" stroke-width="1.5" />
+                <rect x="194" y="102" width="30" height="20" rx="5" fill="#2f7a24" />
+                <rect x="186" y="196" width="46" height="30" fill="#5cbf35" opacity=".9" />
+                <path d="M198 160 v120" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".6" />
+              </g>
+              <!-- caixa longa vida -->
+              <g>
+                <rect x="242" y="164" width="58" height="130" fill="#f5efdf" stroke="#d8cdb2" stroke-width="1.5" />
+                <polygon points="242,164 271,132 300,164" fill="#ebe2cb" stroke="#d8cdb2" stroke-width="1.5" />
+                <rect x="265" y="120" width="12" height="14" fill="#ebe2cb" stroke="#d8cdb2" stroke-width="1.5" />
+                <rect x="242" y="190" width="58" height="22" fill="#1e5c1a" />
+                <circle cx="271" cy="236" r="10" fill="none" stroke="#1e5c1a" stroke-width="3" />
+              </g>
+              <!-- lata -->
+              <g>
+                <rect x="310" y="186" width="48" height="112" rx="7" fill="url(#alu)" />
+                <ellipse cx="334" cy="188" rx="24" ry="6" fill="#d9dfdc" stroke="#8f9a98" />
+                <rect x="310" y="214" width="48" height="36" fill="#79c943" />
+                <text x="334" y="237" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="11" fill="#13310f">ALU</text>
+              </g>
+
+              <!-- sacola: lateral -->
+              <polygon points="404,250 452,234 474,486 424,504" fill="url(#kraftSide)" />
+              <!-- sacola: frente -->
+              <polygon points="150,250 404,250 424,504 130,504" fill="url(#kraft)" />
+              <!-- borda dobrada -->
+              <polygon points="150,250 404,250 405,268 149,268" fill="#c39459" />
+              <polygon points="404,250 452,234 453,250 405,268" fill="#8d6234" />
+              <!-- alças -->
+              <path d="M214 258 C 212 176, 342 176, 340 258" fill="none" stroke="#7a5229" stroke-width="7" stroke-linecap="round" />
+              <path d="M226 258 C 226 192, 330 192, 328 258" fill="none" stroke="#5f3f1f" stroke-width="4" stroke-linecap="round" opacity=".55" />
+              <!-- textura de papel -->
+              <g stroke="#a67a46" stroke-width="1" opacity=".35">
+                <path d="M170 300 L 160 480" /><path d="M392 300 L 404 480" /><path d="M150 420 L 420 420" />
+              </g>
+
+              <!-- etiqueta QR -->
+              <g class="qrtag">
+                <rect x="212" y="306" width="134" height="160" rx="10" fill="#fbfaf4" />
+                <g id="qr" transform="translate(222 316)"></g>
+                <text x="279" y="454" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="11" letter-spacing="2" fill="#1e5c1a">GREENCASH</text>
+                <rect class="qrtag__scan" x="218" y="316" width="122" height="3" rx="1.5" fill="#6cc33b" />
+              </g>
+
+              <!-- musgo (gerado via JS) -->
+              <g id="moss"></g>
+
+              <!-- folhas da frente -->
+              <g class="sway">
+                <use href="#leaf" fill="url(#leafA)" transform="translate(140 500) rotate(-160) scale(1.1)" />
+                <use href="#leaf" fill="url(#leafA)" transform="translate(150 262) rotate(-150) scale(.9)" />
+                <use href="#leaf" fill="#7fd14a" transform="translate(412 495) rotate(-25) scale(.95)" />
+                <use href="#leaf" fill="url(#leafB)" transform="translate(408 258) rotate(-15) scale(.8)" />
+              </g>
+            </g>
+
+            <!-- folha voando -->
+            <g class="drift">
+              <use href="#leaf" fill="#86d651" transform="translate(470 120) rotate(-30) scale(.45)" />
+            </g>
+          </svg>
+        </div>
+
+        <a class="scroll-cue" href="#problema">Role para baixo <span aria-hidden="true">⌄</span></a>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMA ============ -->
+    <section class="problem" id="problema" aria-labelledby="problem-title">
+      <header class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">O problema</p>
+        <h2 id="problem-title" class="section-title">A embalagem <em>some no caminho</em>.</h2>
+      </header>
+      <div class="problem__grid">
+        <div class="problem__lead reveal">
+          <strong class="problem__big">79%</strong>
+          <p>dos plásticos não foram reciclados no Brasil em 2024: acabam em aterros, lixões ou na natureza.</p>
+          <p class="problem__punch">Quem recicla não ganha nada. Quem não recicla não perde nada.</p>
+        </div>
+        <ul class="problem__stats">
+          <li class="reveal"><strong>400+ anos</strong><span>para uma garrafa PET se decompor</span></li>
+          <li class="reveal"><strong>40%</strong><span>do lixo do país vai para lixões e outros destinos inadequados</span></li>
+          <li class="reveal"><strong>325 mil t</strong><span>de plástico chegam ao mar brasileiro por ano</span></li>
+          <li class="reveal"><strong>R$ 14 bi</strong><span>perdidos por ano com a falta de reciclagem</span></li>
+        </ul>
+      </div>
+      <p class="problem__sources">Fontes: MaxiQuim/PICPlast 2025 · Abrema, Panorama 2025 · Oceana · FDC/Instituto Atmos</p>
+    </section>
+
+    <!-- ============ A SACADA ============ -->
+    <section class="manifesto" id="sacada">
+      <div class="manifesto__card reveal">
+        <div class="manifesto__head">
+          <span>A nossa<br />sacada</span>
+          <span class="tag">CPF</span>
+        </div>
+        <svg viewBox="0 0 64 64" class="manifesto__icon" aria-hidden="true">
+          <path d="M16 6h32v52l-5-3-5 3-6-3-6 3-5-3-5 3z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" />
+          <path d="M23 18h18M23 26h18M23 34h10" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          <path d="M38 40c-1-6 3-10 9-10 0 6-3 10-9 10zM38 40c-3-3-8-3-10 0 3 3 8 3 10 0z" fill="currentColor" />
+        </svg>
+      </div>
+      <div class="manifesto__text reveal">
+        <p class="manifesto__quote">
+          O CPF na nota já diz o que você comprou. <em>Falta provar o que você devolveu.</em>
+        </p>
+        <p class="manifesto__sub">Milhões de brasileiros já pedem CPF na nota. A gente fecha o ciclo.</p>
+        <a href="#como-funciona" class="link-arrow">Ver como funciona <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="manifesto__vine" aria-hidden="true">
+        <svg viewBox="0 0 320 260">
+          <path class="vine-path" d="M10 250 C 80 230, 70 150, 140 140 S 230 120, 250 60 S 300 20, 310 10" fill="none" stroke="#3f7d27" stroke-width="10" stroke-linecap="round" />
+          <g fill="#5fb937">
+            <use href="#leaf" transform="translate(60 228) rotate(-140) scale(.5)" />
+            <use href="#leaf" transform="translate(120 146) rotate(-60) scale(.55)" />
+            <use href="#leaf" transform="translate(170 132) rotate(-150) scale(.5)" />
+            <use href="#leaf" transform="translate(240 80) rotate(-30) scale(.6)" />
+            <use href="#leaf" transform="translate(262 48) rotate(-170) scale(.45)" />
+            <use href="#leaf" transform="translate(300 18) rotate(-60) scale(.4)" />
+          </g>
+          <g fill="#2d6a1f">
+            <use href="#leaf" transform="translate(95 170) rotate(30) scale(.45)" />
+            <use href="#leaf" transform="translate(210 110) rotate(20) scale(.45)" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section class="steps" id="como-funciona" aria-labelledby="steps-title">
+      <header class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Como funciona</p>
+        <h2 id="steps-title" class="section-title">Quatro passos,<br /><em>um rastro</em>.</h2>
+        <p class="section-lead">Tudo controlado em um único app, vinculado ao seu CPF.</p>
+      </header>
+
+      <ol class="steps__list">
+        <li class="step reveal">
+          <span class="step__num">01</span>
+          <div class="step__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-2-1.2-2 1.2-2-1.2-2 1.2-2-1.2L6 21z" /><path d="M9 8h6M9 11.5h6M9 15h3" /></svg>
+          </div>
+          <h3>Compra</h3>
+          <p>Você informa o CPF. O app lê a NFC-e (QR do cupom ou API da SEFAZ) e lista as embalagens recicláveis.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">02</span>
+          <div class="step__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /><path d="M10 13h1.5v1.5H10zM12.5 13H14v1.5h-1.5zM10 15.5h1.5V17H10zM12.5 15.5H14V17h-1.5z" /></svg>
+          </div>
+          <h3>Descarte</h3>
+          <p>No ponto de coleta, você pega um QR Code, cola na sacola e vincula ao seu CPF pelo app.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">03</span>
+          <div class="step__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" /><path d="M15.5 15.5 21 21" /><path d="M8 8v5M10 8v5M12 8v5M13.5 8v5" /></svg>
+          </div>
+          <h3>Triagem</h3>
+          <p>Na cooperativa, o QR é lido e as embalagens são conferidas pelo código de barras ou por visão computacional.</p>
+        </li>
+        <li class="step step--final reveal">
+          <span class="step__num">04</span>
+          <div class="step__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2.5l2.2 1.6 2.7-.1.8 2.6 2.2 1.6-.9 2.6.9 2.6-2.2 1.6-.8 2.6-2.7-.1L12 21.5l-2.2-1.6-2.7.1-.8-2.6-2.2-1.6.9-2.6-.9-2.6 2.2-1.6.8-2.6 2.7.1z" /><path d="M8.5 12.2l2.3 2.3 4.7-4.8" /></svg>
+          </div>
+          <h3>Crédito</h3>
+          <p>O sistema cruza descarte com compra. Bateu, total ou parcialmente? O crédito é emitido e gravado em blockchain.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ A PROVA + BLOCKCHAIN ============ -->
+    <section class="chain" id="prova" aria-labelledby="chain-title">
+      <div class="chain__copy reveal">
+        <p class="eyebrow">A prova</p>
+        <h2 id="chain-title" class="section-title section-title--light">
+          O descarte precisa <em>bater com a compra</em>.
+        </h2>
+        <p class="section-lead section-lead--light">
+          Na triagem, cada embalagem da sacola é comparada com o que saiu na nota fiscal do seu CPF.
+          Bateu tudo, o crédito é integral. Bateu parte, o crédito é proporcional.
+        </p>
+        <h3 class="chain__rules-title">Regras antifraude</h3>
+        <ul class="chain__rules">
+          <li>Só conta o que saiu na sua nota.</li>
+          <li>Cada embalagem gera crédito uma única vez.</li>
+          <li>Há um prazo máximo entre a compra e o descarte.</li>
+        </ul>
+      </div>
+
+      <div class="demo reveal" aria-live="polite">
+        <div class="demo__bar">
+          <span class="demo__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>App GreenCash · Minhas embalagens</span>
+          <span class="demo__flag">Demonstração</span>
+        </div>
+        <div class="demo__body">
+          <div class="demo__user">
+            <div>
+              <small>Titular (hash do CPF)</small>
+              <strong>0x5e1b…c47d</strong>
+            </div>
+            <div class="demo__status" data-status>NFC-e lida · 5 embalagens recicláveis</div>
+          </div>
+
+          <div class="ledger" data-ledger role="table" aria-label="Comparação entre compra e descarte">
+            <div class="block block--head" role="row">
+              <span role="columnheader">Embalagem</span>
+              <span role="columnheader" class="block__num">Comprado</span>
+              <span role="columnheader" class="block__num">Descartado</span>
+              <span role="columnheader" class="block__state">Status</span>
+            </div>
+            <div class="block" role="row" data-item="pet">
+              <span class="block__name" role="cell">Garrafa PET 2 L</span>
+              <span class="block__num" role="cell" data-label="Comprado">2</span>
+              <span class="block__num" role="cell" data-label="Descartado" data-disc>–</span>
+              <span class="block__state" role="cell">Aguardando triagem</span>
+            </div>
+            <div class="block" role="row" data-item="pote">
+              <span class="block__name" role="cell">Pote plástico</span>
+              <span class="block__num" role="cell" data-label="Comprado">2</span>
+              <span class="block__num" role="cell" data-label="Descartado" data-disc>–</span>
+              <span class="block__state" role="cell">Aguardando triagem</span>
+            </div>
+            <div class="block" role="row" data-item="lata">
+              <span class="block__name" role="cell">Lata de alumínio</span>
+              <span class="block__num" role="cell" data-label="Comprado">1</span>
+              <span class="block__num" role="cell" data-label="Descartado" data-disc>–</span>
+              <span class="block__state" role="cell">Aguardando triagem</span>
+            </div>
+          </div>
+
+          <div class="scanner">
+            <div class="scanner__qr" aria-hidden="true">
+              <svg viewBox="0 0 110 110"><g id="qr2"></g></svg>
+              <span class="scanner__line"></span>
+            </div>
+            <div class="scanner__info">
+              <small>Triagem na cooperativa · Sacola #GC-20931</small>
+              <p data-scan-msg>A sacola foi entregue no ponto de coleta e está a caminho da triagem.</p>
+              <button class="btn btn--leaf btn--sm" data-scan>Simular triagem</button>
+            </div>
+          </div>
+
+          <div class="demo__total" data-total hidden>
+            <div>
+              <strong>3 de 5</strong>
+              <span>embalagens comprovadas</span>
+            </div>
+            <p>Match parcial gera crédito proporcional.<br /><code data-tx>tx 0x9f2c…a71b</code> gravada em blockchain</p>
+          </div>
+        </div>
+        <p class="demo__note">Dados fictícios, apenas para ilustrar o fluxo.</p>
+      </div>
+
+      <div class="chain__why">
+        <header class="reveal">
+          <p class="eyebrow">Por que blockchain</p>
+          <h2 class="chain__why-title">Uma prova que <em>ninguém consegue apagar</em>.</h2>
+        </header>
+        <ul class="chain__points">
+          <li class="reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2" /><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3" /><path d="M12 14.5v2.5" /></svg>
+            <strong>Imutável</strong>
+            <span>Compra, descarte e crédito ficam num registro que ninguém altera depois.</span>
+          </li>
+          <li class="reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8.5" cy="8.5" r="4.5" /><path d="M11.8 11.8 20 20M16.5 16.5l2-2M18.5 18.5l1.5-1.5" /></svg>
+            <strong>Sem dupla contagem</strong>
+            <span>Cada embalagem é um registro único: não gera crédito duas vezes nem é vendida duas vezes.</span>
+          </li>
+          <li class="reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-3 8-7 9.5-4-1.5-7-5.2-7-9.5V6z" /><path d="M9 12l2.2 2.2L15.5 10" /></svg>
+            <strong>Auditável e privado</strong>
+            <span>Prefeitura, SEFAZ e indústria auditam. O CPF não vai para a rede, só um hash (LGPD).</span>
+          </li>
+        </ul>
+        <p class="chain__foot">Rede permissionada, de baixo custo, com governança pública.</p>
+      </div>
+    </section>
+
+    <!-- ============ ONDE USAR O CRÉDITO ============ -->
+    <section class="uses" id="credito" aria-labelledby="uses-title">
+      <header class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">O crédito</p>
+        <h2 id="uses-title" class="section-title">Onde você <em>usa o crédito</em>.</h2>
+      </header>
+      <div class="uses__grid">
+        <article class="use reveal">
+          <svg class="use__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 8H6.2" /><circle cx="10" cy="20" r="1.4" /><circle cx="17" cy="20" r="1.4" /></svg>
+          <h3>Na próxima compra</h3>
+          <p>Desconto direto no caixa do varejo parceiro, pelo mesmo CPF.</p>
+        </article>
+        <article class="use use--tax reveal">
+          <svg class="use__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7" /><path d="M5.5 9.5V20h13V9.5" /><path d="M10 20v-5h4v5" /></svg>
+          <h3>Em tributos</h3>
+          <p>Abatimento em IPTU ou taxa de lixo no piloto. Depois, tributos estaduais, como já faz a Nota Fiscal Paulista.</p>
+        </article>
+        <article class="use use--next reveal">
+          <span class="use__tag">Próximo passo</span>
+          <svg class="use__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.5 9.2 4.5 4.5 0 0 0 7 18z" /></svg>
+          <h3>Crédito de carbono</h3>
+          <p>A evolução natural: o mesmo dado, convertido em toneladas de CO₂ evitadas e certificado.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ MODELO DE NEGÓCIO ============ -->
+    <section class="model" id="modelo" aria-labelledby="model-title">
+      <header class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Modelo de negócio</p>
+        <h2 id="model-title" class="section-title">Quem <em>paga o crédito</em>.</h2>
+      </header>
+      <div class="model__flow">
+        <article class="model__card reveal">
+          <h3>Indústria</h3>
+          <p>Tem metas legais de reciclagem de embalagens e pode comprová-las comprando certificados de crédito de reciclagem.</p>
+        </article>
+        <span class="model__arrow" aria-hidden="true"></span>
+        <article class="model__card model__card--core reveal">
+          <img src="assets/logo-icon.webp" alt="" width="193" height="155" />
+          <h3>GreenCash</h3>
+          <p>Entrega lastro rastreado: cada quilo reciclado ligado a uma compra real, auditável e sem dupla contagem.</p>
+        </article>
+        <span class="model__arrow" aria-hidden="true"></span>
+        <ul class="model__out reveal">
+          <li><strong>Cidadão</strong><span>crédito no CPF</span></li>
+          <li><strong>Cooperativa</strong><span>pagamento pela triagem</span></li>
+          <li><strong>Plataforma</strong><span>taxa de operação</span></li>
+        </ul>
+      </div>
+      <p class="model__legal">Base legal: Decreto 11.413/2023 (certificados de crédito de reciclagem) · Decreto 12.688/2025 (metas para plástico)</p>
+    </section>
+
+    <!-- ============ IMPACTO ============ -->
+    <section class="benefits" id="impacto" aria-labelledby="benefits-title">
+      <header class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Impacto</p>
+        <h2 id="benefits-title" class="section-title">Todo mundo <em>ganha</em>.</h2>
+      </header>
+
+      <div class="bento">
+        <article class="tile tile--you reveal">
+          <span class="tile__kicker">Cidadão</span>
+          <h3>Recicla e recebe de volta, no próprio CPF.</h3>
+          <svg class="tile__art" viewBox="0 0 200 200" aria-hidden="true">
+            <circle cx="100" cy="100" r="70" fill="#7fd14a" />
+            <text x="100" y="124" text-anchor="middle" font-family="Fraunces, serif" font-size="78" font-weight="600" fill="#13310f">$</text>
+            <use href="#leaf" fill="#1e5c1a" transform="translate(150 50) rotate(-70) scale(.6)" />
+            <use href="#leaf" fill="#2d6a1f" transform="translate(40 160) rotate(140) scale(.55)" />
+          </svg>
+        </article>
+        <article class="tile tile--city reveal">
+          <span class="tile__kicker">Cooperativa</span>
+          <h3>Mais volume, material mais limpo.</h3>
+          <p>E uma nova fonte de renda: o pagamento pela triagem.</p>
+        </article>
+        <article class="tile tile--industry reveal">
+          <span class="tile__kicker">Indústria</span>
+          <h3>Metas de reciclagem comprovadas.</h3>
+          <p>Com dados confiáveis, ligados a compras reais.</p>
+        </article>
+        <article class="tile tile--gov reveal">
+          <span class="tile__kicker">Poder público</span>
+          <h3>Dados de reciclagem por bairro e menos resíduo no aterro.</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ESCALA ============ -->
+    <section class="scale" id="escala" aria-labelledby="scale-title">
+      <header class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Escala</p>
+        <h2 id="scale-title" class="section-title">Do bairro <em>ao país</em>.</h2>
+      </header>
+      <ol class="scale__list">
+        <li class="reveal">
+          <span class="scale__phase">Fase 1 · Municipal</span>
+          <h3>Piloto na cidade</h3>
+          <p>Uma cooperativa, pontos de coleta e seis meses de operação.</p>
+        </li>
+        <li class="reveal">
+          <span class="scale__phase">Fase 2 · Estadual</span>
+          <h3>Integração SEFAZ</h3>
+          <p>Convênio com a SEFAZ, rede de cooperativas e crédito em tributo estadual.</p>
+        </li>
+        <li class="reveal">
+          <span class="scale__phase">Fase 3 · Federal</span>
+          <h3>Padrão nacional</h3>
+          <p>Integração ao SINIR e rastreio único da embalagem pós-consumo no país.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ SIMULADOR ============ -->
+    <section class="sim" id="simulador" aria-labelledby="sim-title">
+      <div class="sim__copy reveal">
+        <p class="eyebrow eyebrow--dark">Simulador</p>
+        <h2 id="sim-title" class="section-title">Quanto a sua<br /><em>reciclagem</em> pode render?</h2>
+        <p class="section-lead">Arraste para estimar quantas embalagens da sua nota você devolve por mês.</p>
+      </div>
+      <div class="sim__panel reveal">
+        <label class="sim__label" for="qtd">
+          Embalagens comprovadas por mês
+          <output id="qtdOut" for="qtd">60</output>
+        </label>
+        <input type="range" id="qtd" min="10" max="300" step="5" value="60" />
+        <div class="sim__scale" aria-hidden="true"><span>10</span><span>150</span><span>300</span></div>
+
+        <div class="sim__results">
+          <div>
+            <small>Crédito estimado por ano</small>
+            <strong id="simMoney">R$ 28,80</strong>
+          </div>
+          <div>
+            <small>Embalagens devolvidas à reciclagem por ano</small>
+            <strong id="simItems">720</strong>
+          </div>
+        </div>
+        <div class="sim__jar" aria-hidden="true">
+          <div class="sim__fill" id="simFill"></div>
+        </div>
+        <p class="sim__note">Valor ilustrativo (R$ 0,04 por embalagem comprovada). O valor real ainda será definido no piloto.</p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <header class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Dúvidas</p>
+        <h2 id="faq-title" class="section-title">Perguntas <em>frequentes</em></h2>
+      </header>
+      <div class="faq__list">
+        <details class="reveal">
+          <summary>Preciso de algum aplicativo?</summary>
+          <p>Sim. Tudo fica em um único app vinculado ao seu CPF: ele lê a NFC-e da compra (pelo QR do cupom ou pela API da SEFAZ), vincula o QR Code da sacola e mostra o seu crédito.</p>
+        </details>
+        <details class="reveal">
+          <summary>Quais embalagens contam?</summary>
+          <p>As embalagens recicláveis que aparecem na nota fiscal emitida no seu CPF. Depois da compra, o app lista quais são.</p>
+        </details>
+        <details class="reveal">
+          <summary>E se eu devolver só parte das embalagens?</summary>
+          <p>O crédito é proporcional. Se você comprou 2 potes e devolveu 1, esse 1 gera crédito e o outro fica pendente.</p>
+        </details>
+        <details class="reveal">
+          <summary>E se a embalagem não estiver na minha nota?</summary>
+          <p>Ela segue para a reciclagem, mas não conta para o crédito. Só conta o que saiu na sua nota.</p>
+        </details>
+        <details class="reveal">
+          <summary>Existe prazo para devolver?</summary>
+          <p>Sim. Há um prazo máximo entre a compra e o descarte para a embalagem gerar crédito.</p>
+        </details>
+        <details class="reveal">
+          <summary>Meus dados pessoais ficam expostos na blockchain?</summary>
+          <p>Não. O CPF não vai para a rede: na blockchain fica só um hash, conforme a LGPD. Prefeitura, SEFAZ e indústria auditam os registros.</p>
+        </details>
+        <details class="reveal">
+          <summary>Onde eu uso o crédito?</summary>
+          <p>Como desconto na próxima compra no varejo parceiro, ou como abatimento em IPTU ou taxa de lixo no piloto. Depois, também em tributos estaduais.</p>
+        </details>
+        <details class="reveal">
+          <summary>Quem paga pelo crédito?</summary>
+          <p>A indústria, que tem metas legais de reciclagem e pode comprová-las comprando certificados de crédito de reciclagem lastreados nas embalagens devolvidas.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="participar" aria-labelledby="cta-title">
+      <div class="cta__inner reveal">
+        <img class="cta__icon" src="assets/logo-icon.webp" alt="" width="193" height="155" />
+        <h2 id="cta-title" class="section-title section-title--light">Cada embalagem deixa um rastro. Com o GreenCash, ele <em>termina na reciclagem</em>.</h2>
+        <p class="section-lead section-lead--light">E vira dinheiro no seu bolso. Deixe seu e-mail e avisamos quando o piloto chegar à sua cidade.</p>
+        <form class="cta__form" data-form novalidate>
+          <label class="sr-only" for="email">Seu e-mail</label>
+          <input id="email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" required />
+          <button class="btn btn--leaf" type="submit">Quero ser avisado</button>
+        </form>
+        <p class="cta__msg" data-form-msg role="status"></p>
+        <div class="cta__partners">
+          <span>O que buscamos</span>
+          <ul>
+            <li>Prefeitura parceira para o piloto</li>
+            <li>Cooperativa de reciclagem</li>
+            <li>Convênio com a SEFAZ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta__leaves" aria-hidden="true">
+        <svg viewBox="0 0 400 200">
+          <g class="sway"><use href="#leaf" fill="#2d6a1f" transform="translate(20 190) rotate(-60) scale(1.3)" /></g>
+          <use href="#leaf" fill="#4caf2f" transform="translate(60 200) rotate(-100) scale(1.1)" />
+          <g class="sway sway--slow"><use href="#leaf" fill="#7fd14a" transform="translate(380 200) rotate(-130) scale(1.2)" /></g>
+          <use href="#leaf" fill="#3f8a2a" transform="translate(350 200) rotate(-80) scale(1)" />
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/logo-greencash.webp" alt="GreenCash" width="683" height="155" class="footer__logo" />
+    <nav aria-label="Rodapé">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#prova">A prova</a>
+      <a href="#credito">Crédito</a>
+      <a href="#modelo">Modelo</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <p>© <span data-year>2026</span> GreenCash. Sua nota fiscal vira crédito quando você recicla.</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
